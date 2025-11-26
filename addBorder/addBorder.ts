@@ -1,6 +1,6 @@
 export function addBorder(picture: string[]): string[] {
-  // time: (O)n
-  // space: (O)n
+  // time: O(n)
+  // space: O(n)
   if (picture.length === 0) throw new Error("error: input cannot be a empty array.");
   const borderedPic = new Array(picture.length + 2);
   const borderStr = '*'.repeat(picture[0].length + 2)
